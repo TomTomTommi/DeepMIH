@@ -35,12 +35,12 @@ Published on **IEEE Transactions of Pattern Analysis and Machine Intelligence (T
 
 1. Here we provide a trained [model](https://drive.google.com/drive/folders/1guno6VwfCpuB8o5m0ZqFHNL4ZWc8SdJe?usp=sharing).
 2. Download and update the `MODEL_PATH` and the file name `suffix` before testing by the trained model.  
-For example, if the model name is  `model_1.pt`,  `model_2.pt`,  `model_3.pt`,  
-and its path is `/home/usrname/Hinet/model/`,  
+For example, if the model name is  `model_checkpoint_03000_1.pt`,  `model_checkpoint_03000_2.pt`,  `model_checkpoint_03000_3.pt`,  
+and its path is `/home/usrname/DeepMIH/model/`,  
 set:  
-`PRETRAIN_PATH = '/home/usrname/Hinet/model/'`,  
-`PRETRAIN_PATH_3 = '/home/usrname/Hinet/model/'`,  
-file name `suffix = 'model.pt'`.  
+`PRETRAIN_PATH = '/home/usrname/DeepMIH/model/'`,  
+`PRETRAIN_PATH_3 = '/home/usrname/DeepMIH/model/'`,  
+file name `suffix = 'model_checkpoint_03000'`.  
 3. Check the dataset path is correct.
 4. Create an image path to save the generated images. Update `TEST_PATH`.
 5. Run `test_oldversion.py`.
@@ -48,11 +48,15 @@ file name `suffix = 'model.pt'`.
 
 ## 3. Train
 
-1. Note that in the `train_old_version.py` at line 223:  
+1. Run `train_old_version.py`. Following the Algorithm 1 to train the model.
+2. **Note: MFQEv2 may be hard to train.**
+
+
+## 4. Further explanation
+In the `train_old_version.py` at line 223:  
 `rev_secret_dwt_2 = rev_dwt_2.narrow(1, 4 * c.channels_in, 4 * c.channels_in)  # channels = 12`,   
-the recovered secret image_2 is obtained by spliting the middle 12 channels of the varible `rev_dwt_2`. However, in the forward process_2, the input is obtained by concatenating (stego, imp, secret_2) together. This means that the original code `train_old_version.py` has a bug on recovery process (the last 12 channels of the varible `rev_dwt_2` should be splited to be the recovered secret image_2). We found that in this way the network is still able to converge, thus we keep this setting in the testing process.  
+the recovered secret image_2 is obtained by spliting the middle 12 channels of the varible `rev_dwt_2`. However, in the forward process_2, the input is obtained by concatenating (stego, imp, secret_2) together. This means that the original code `train_old_version.py` has a bug on recovery process (the last 12 channels of the varible `rev_dwt_2` should be splited to be the recovered secret image_2, instead of the middle 12 one). We found that in this way the network is still able to converge, thus we keep this setting in the test process.  
 We also offer a corrected version `train.py` (see line 225) and `test.py`. You can also train your own model in this way.
-3. Run `train_old_version.py`. Following the Algorithm 1 to train the model.
 
 
 ## Citation
