@@ -8,9 +8,9 @@ This repo is the official code for
 Published on **TPAMI 2022**.
 @ [Beihang University](http://ev.buaa.edu.cn/).
 
-<!-- <center> -->
-<!--   <img src=https://github.com/TomTomTommi/HiNet/blob/main/HiNet.png width=60% /> -->
-<!-- </center> -->
+<center>
+  <img src=https://github.com/TomTomTommi/DeepMIH/blob/main/image/framework.pdf width=60% />
+</center>
 
 
 ## 1. Pre-request
