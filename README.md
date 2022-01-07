@@ -1,4 +1,4 @@
-# DeepMIH: Deep Invertible Network for Multiple Image Hiding
+# DeepMIH: Deep Invertible Network for Multiple Image Hiding (TPAMI 2022)
 
 This repo is the official code for
 
@@ -58,6 +58,8 @@ In the `train_old_version.py` at line 223:
 the recovered secret image_2 is obtained by spliting the middle 12 channels of the varible `rev_dwt_2`. However, in the forward process_2, the input is obtained by concatenating (stego, imp, secret_2) together. This means that the original code `train_old_version.py` has a bug on recovery process (the last 12 channels of the varible `rev_dwt_2` should be splited to be the recovered secret image_2, instead of the middle 12 one). We found that in this way the network is still able to converge, thus we keep this setting in the test process.  
 We also offer a corrected version `train.py` (see line 225) and `test.py`. You can also train your own model in this way.
 
+
+Feel free to contact: <junpengjing@buaa.edu.cn>.
 
 ## Citation
 If you find this repository helpful, you may cite:
