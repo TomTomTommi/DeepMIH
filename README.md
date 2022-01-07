@@ -9,7 +9,7 @@ Published on **TPAMI 2022**.
 @ [Beihang University](http://ev.buaa.edu.cn/).
 
 <center>
-  <img src=https://github.com/TomTomTommi/DeepMIH/blob/main/image/figure2.jpg width=80% />
+  <img src=https://github.com/TomTomTommi/DeepMIH/blob/main/image/figure2.jpg width=50% />
 </center>
 
 
