@@ -50,8 +50,9 @@ file name `suffix = 'model.pt'`.
 
 1. Note that in the `train_old_version.py` at line 223:  
 `rev_secret_dwt_2 = rev_dwt_2.narrow(1, 4 * c.channels_in, 4 * c.channels_in)  # channels = 12`,   
-the recovered secret image 2 is obtained by split the middle 12 channels of the varible `rev_dwt_2`. However, in the forward process 2, the input is obtained by concatenated (stego, imp, secret_2). This means the code has a bug on recovery process (the last 12 channels of the varible `rev_dwt_2` should be splited to be the recovered secret image 2). We found that in this way the network is still able to converge, thus we keep this setting in the testing process. We also offer a corrected version `train.py` (see line 225) and `test.py`. You can train your own model in this way.
-3. Run `train_old_version.py`.
+the recovered secret image_2 is obtained by spliting the middle 12 channels of the varible `rev_dwt_2`. However, in the forward process_2, the input is obtained by concatenating (stego, imp, secret_2) together. This means that the original code `train_old_version.py` has a bug on recovery process (the last 12 channels of the varible `rev_dwt_2` should be splited to be the recovered secret image_2). We found that in this way the network is still able to converge, thus we keep this setting in the testing process.  
+We also offer a corrected version `train.py` (see line 225) and `test.py`. You can also train your own model in this way.
+3. Run `train_old_version.py`. Following the Algorithm 1 to train the model.
 
 
 ## Citation
