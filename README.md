@@ -9,7 +9,7 @@ Published on **IEEE Transactions of Pattern Analysis and Machine Intelligence (T
 @ [Beihang University](http://ev.buaa.edu.cn/).
 
 <center>
-  <img src=https://github.com/TomTomTommi/DeepMIH/blob/main/image/figure2.jpg width=50% />
+  <img src=https://github.com/TomTomTommi/DeepMIH/blob/main/image/figure2.jpg width=30% />
 </center>
 
 
@@ -49,7 +49,7 @@ file name `suffix = 'model_checkpoint_03000'`.
 ## 3. Train
 
 1. Run `train_old_version.py`. Following the Algorithm 1 to train the model.
-2. **Note: MFQEv2 may be hard to train.** The model may suffer from explosion. Our solution is to stop the training process at a normal node and abate the learning rate. Then, continue to train the model.
+2. **Note: DeepMIH may be hard to train.** The model may suffer from explosion. Our solution is to stop the training process at a normal node and abate the learning rate. Then, continue to train the model.
 
 
 ## 4. Further explanation
