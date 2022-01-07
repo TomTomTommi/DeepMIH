@@ -24,11 +24,17 @@ Published on **IEEE Transactions of Pattern Analysis and Machine Intelligence (T
 
 - In this paper, we use the commonly used dataset DIV2K, COCO, and ImageNet.
 - For train or test on your own path, change the code in `config.py`:
+
     `line50:  TRAIN_PATH_DIV2K = '' ` 
+    
     `line51:  VAL_PATH_DIV2K = '' `
+    
     `line54:  VAL_PATH_COCO  = '' `
+    
     `line55:  TEST_PATH_COCO = '' ` 
+    
     `line57:  VAL_PATH_IMAGENET  = '' `
+    
 
 ## 2. Test
 
