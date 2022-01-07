@@ -39,11 +39,9 @@ Published on **IEEE Transactions of Pattern Analysis and Machine Intelligence (T
 ## 2. Test
 
 1. Here we provide a trained [model](https://drive.google.com/drive/folders/1guno6VwfCpuB8o5m0ZqFHNL4ZWc8SdJe?usp=sharing).
-2. Download and update the `MODEL_PATH` and the file name `suffix` before testing by the trained model.
-
-For example, if the model name is `model_1.pt`, `model_2.pt`, `model_3.pt` and its path is `/home/usrname/Hinet/model/`：
-
-set `PRETRAIN_PATH = '/home/usrname/Hinet/model/'`, `PRETRAIN_PATH_3 = '/home/usrname/Hinet/model/'` and file name `suffix = 'model.pt'`.
+2. Download and update the `MODEL_PATH` and the file name `suffix` before testing by the trained model.  
+For example, if the model name is `model_1.pt`, `model_2.pt`, `model_3.pt` and its path is `/home/usrname/Hinet/model/`：  
+set `PRETRAIN_PATH = '/home/usrname/Hinet/model/'`, `PRETRAIN_PATH_3 = '/home/usrname/Hinet/model/'` and file name `suffix = 'model.pt'`.  
 3. Check the dataset path is correct.
 4. Create an image path to save the generated images. Update the `TEST_PATH`.
 5. Run `test_oldversion.py`.
