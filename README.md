@@ -1,21 +1,29 @@
-# *DeepMIH: Deep Invertible Network for Multiple Image Hiding* (TPAMI 2022)
+# DeepMIH: Deep Invertible Network for Multiple Image Hiding
 
-<!-- :rocket: **Update** (21/4/27): We open-source all compared approaches at [PowerQE](https://github.com/RyanXingQL/PowerQE). MFQE will also be re-implemented and open-sourced soon. -->
+This repo is the official code for
 
-## 0. Background
+* [*DeepMIH: Deep Invertible Network for Multiple Image Hiding*](https:) 
+  * [*Zhenyu Guan*](http://cst.buaa.edu.cn/info/1071/2542.htm), [*Junpeng Jing*](https://tomtomtommi.github.io/)(co-first), [*Xin Deng*](http://www.commsp.ee.ic.ac.uk/~xindeng/), [*Mai Xu*](http://shi.buaa.edu.cn/MaiXu/zh_CN/index.htm), *Lai Jiang*, *Zhou Zhang*, *Yipeng Li*.
 
-Official repository of [*DeepMIH: Deep Invertible Network for Multiple Image Hiding*](http://), TPAMI 2022.
+Published on **TPAMI 2022**.
+@ [Beihang University](http://ev.buaa.edu.cn/).
+
+<!-- <center> -->
+<!--   <img src=https://github.com/TomTomTommi/HiNet/blob/main/HiNet.png width=60% /> -->
+<!-- </center> -->
 
 
 ## 1. Pre-request
 
-### 1.1. Environment
+### 1.1. Dependencies and Installation
 
-- Python 3.5
+- Python 3 (Recommend to use [Anaconda](https://www.anaconda.com/download/#linux)).
+- [PyTorch = 1.0.1](https://pytorch.org/) .
+- See [environment.yml](https://github.com/TomTomTommi/HiNet/blob/main/environment.yml) for other dependencies.
 
 ### 1.2. Dataset
 
-Please check [here](https://github.com/RyanXingQL/MFQEv2.0/wiki/MFQEv2-Dataset).
+Please check [here](https://github.com/).
 
 ## 2. Test
 
@@ -24,21 +32,14 @@ Please check [here](https://github.com/RyanXingQL/MFQEv2.0/wiki/MFQEv2-Dataset).
 3. 
 4. Run `test.py`.
 
-**Note: Enhancing class A sequences *Traffic* and *PeopleOnStreet* may lead to OOM.** See Q&A.
-
-The average improved PSNR and improved SSIM results will be recorded in `out/record_test.txt`, which are the same as that in our paper:
 
 ## 3. Train
 
 Unfortunately, the above training codes are written in different times and devices. To run these code properly, you may have to change some paths.
 
 
-## 4. Q&A
 
-### 4.1. How to 
-
-
-
+## Citation
 If you find this repository helpful, you may cite:
 
 ```tex
