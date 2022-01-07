@@ -35,8 +35,6 @@ Please check [here](https://github.com/).
 
 ## 3. Train
 
-Unfortunately, the above training codes are written in different times and devices. To run these code properly, you may have to change some paths.
-
 
 
 ## Citation
