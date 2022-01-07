@@ -14,27 +14,39 @@ Published on **TPAMI 2022**.
 
 
 ## 1. Pre-request
-
-### 1.1. Dependencies and Installation
+### 1.1 Dependencies and Installation
 
 - Python 3 (Recommend to use [Anaconda](https://www.anaconda.com/download/#linux)).
 - [PyTorch = 1.0.1](https://pytorch.org/) .
 - See [environment.yml](https://github.com/TomTomTommi/HiNet/blob/main/environment.yml) for other dependencies.
 
-### 1.2. Dataset
+### 1.2 Dataset
 
-Please check [here](https://github.com/).
+- In this paper, we use the commonly used dataset DIV2K, COCO, and ImageNet.
+- For train or test on your own path, change the code in `config.py`:
+
+- For train or test on your own dataset, change the code in `config.py`:
+    `line50:  TRAIN_PATH_DIV2K = '' ` 
+    `line51:  VAL_PATH_DIV2K = '' `
+    `line54:  VAL_PATH_COCO  = '' `
+    `line55:  TEST_PATH_COCO = '' ` 
+    `line57:  VAL_PATH_IMAGENET  = '' `
 
 ## 2. Test
 
-1. 
-2. 
-3. 
-4. Run `test.py`.
+1. Here we provide a trained [model](https://drive.google.com/drive/folders/1guno6VwfCpuB8o5m0ZqFHNL4ZWc8SdJe?usp=sharing).
+2. Download and update the `MODEL_PATH` and the file name `suffix` before testing by the trained model.
+For example, if the model name is `model_1.pt`, `model_2.pt`, `model_3.pt` and its path is `/home/usrname/Hinet/model/`, 
+set `PRETRAIN_PATH = '/home/usrname/Hinet/model/'`, `PRETRAIN_PATH_3 = '/home/usrname/Hinet/model/'` and file name `suffix = 'model.pt'`.
+3. Check the dataset path is correct.
+4. Create an image path to save the generated images. Update the `TEST_PATH`.
+5. Run `test_oldversion.py`.
 
 
 ## 3. Train
 
+1.
+4. Run `train_old_version.py`.
 
 
 ## Citation
