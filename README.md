@@ -2,7 +2,7 @@
 
 This repo is the official code for
 
-* [*DeepMIH: Deep Invertible Network for Multiple Image Hiding*](https:) 
+* [*DeepMIH: Deep Invertible Network for Multiple Image Hiding*](https://ieeexplore.ieee.org/document/9676416) 
   * [*Zhenyu Guan*](http://cst.buaa.edu.cn/info/1071/2542.htm)<sup>1</sup>, [*Junpeng Jing*](https://tomtomtommi.github.io/)<sup>1</sup>(**co-first**), [*Xin Deng*](http://www.commsp.ee.ic.ac.uk/~xindeng/), [*Mai Xu*](http://shi.buaa.edu.cn/MaiXu/zh_CN/index.htm), *Lai Jiang*, *Zhou Zhang*, *Yipeng Li*.
 
 Published on **IEEE Transactions of Pattern Analysis and Machine Intelligence (TPAMI 2022)**.
@@ -48,8 +48,10 @@ file name `suffix = 'model_checkpoint_03000'`.
 
 ## 3. Train
 
-1. Run `train_old_version.py`. Following the Algorithm 1 to train the model.
-2. **Note: DeepMIH may be hard to train.** The model may suffer from explosion. Our solution is to stop the training process at a normal node and abate the learning rate. Then, continue to train the model.
+1. Create a path to save the trained models and update `MODEL_PATH`.
+2. Check the optim parameters in `config.py` is correct. Make sure the sub-model(net1, net2, net3...) you want to train is correct.
+3. Run `train_old_version.py`. Following the Algorithm 1 to train the model.
+4. **Note: DeepMIH may be hard to train.** The model may suffer from explosion. Our solution is to stop the training process at a normal node and abate the learning rate. Then, continue to train the model.
 
 
 ## 4. Further explanation
@@ -65,6 +67,13 @@ Feel free to contact: <junpengjing@buaa.edu.cn>.
 If you find this repository helpful, you may cite:
 
 ```tex
-@article{
-}
+@ARTICLE{9676416,
+  author={Guan, Zhenyu and Jing, Junpeng and Deng, Xin and Xu, Mai and Jiang, Lai and Zhang, Zhou and Li, Yipeng},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+  title={DeepMIH: Deep Invertible Network for Multiple Image Hiding}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={1-1},
+  doi={10.1109/TPAMI.2022.3141725}}
 ```
