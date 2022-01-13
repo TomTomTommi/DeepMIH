@@ -8,10 +8,9 @@ This repo is the official code for
 Published on **IEEE Transactions of Pattern Analysis and Machine Intelligence (TPAMI 2022)**.
 @ [Beihang University](http://ev.buaa.edu.cn/).
 
-<center>
-  <img src=https://github.com/TomTomTommi/DeepMIH/blob/main/image/figure2.jpg width=30% />
-</center>
-
+<div align=center>
+  <img src=./image/figure2.jpg width=35% />
+</div>
 
 ## 1. Pre-request
 ### 1.1 Dependencies and Installation
