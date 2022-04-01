@@ -2,7 +2,7 @@
 
 This repo is the official code for
 
-* [*DeepMIH: Deep Invertible Network for Multiple Image Hiding*](https://ieeexplore.ieee.org/document/9676416) &ensp;&ensp; [[论文速览]](https://github.com/TomTomTommi/DeepMIH/blob/main/blog/DeepMIH.md)
+* [*DeepMIH: Deep Invertible Network for Multiple Image Hiding*](https://ieeexplore.ieee.org/document/9676416) &ensp;&ensp; [[论文速览]](https://github.com/TomTomTommi/DeepMIH/blob/main/blog/DeepMIH.md) [[VALSE]](http://valser.org/article-534-1.html) [[Bilibili]](https://www.bilibili.com/video/BV1xr4y1i7J7/)
   * [*Zhenyu Guan*](http://cst.buaa.edu.cn/info/1071/2542.htm)<sup>1</sup>, [*Junpeng Jing*](https://tomtomtommi.github.io/)<sup>1</sup>(**co-first**), [*Xin Deng*](http://www.commsp.ee.ic.ac.uk/~xindeng/), [*Mai Xu*](http://shi.buaa.edu.cn/MaiXu/zh_CN/index.htm), [*Lai Jiang*](https://github.com/remega), *Zhou Zhang*, *Yipeng Li*.
 
 Published on **IEEE Transactions of Pattern Analysis and Machine Intelligence (TPAMI 2022)**.
